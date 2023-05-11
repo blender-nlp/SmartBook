@@ -1,0 +1,1645 @@
+{
+    "turn_id": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+    ],
+    "speaker": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+    ],
+    "utterance": [
+        "i need a place to dine in the center thats expensive",
+        "I have several options for you; do you prefer African, Asian, or British food?",
+        "Any sort of food would be fine, as long as it is a bit expensive. Could I get the phone number for your recommendation?",
+        "There is an Afrian place named Bedouin in the centre. How does that sound?",
+        "Sounds good, could I get that phone number? Also, could you recommend me an expensive hotel?",
+        "Bedouin's phone is 01223367660. As far as hotels go, I recommend the University Arms Hotel in the center of town.",
+        "Yes. Can you book it for me?",
+        "Sure, when would you like that reservation?",
+        "i want to book it for 2 people and 2 nights starting from saturday.",
+        "Your booking was successful. Your reference number is FRGZWQL2 . May I help you further?",
+        "That is all I need to know. Thanks, good bye.",
+        "Thank you so much for Cambridge TownInfo centre. Have a great day!"
+    ],
+    "frames": [
+        {
+            "service": [
+                "restaurant",
+                "taxi",
+                "train",
+                "bus",
+                "police",
+                "hotel",
+                "attraction",
+                "hospital"
+            ],
+            "state": [
+                {
+                    "active_intent": "find_restaurant",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [
+                            "restaurant-area",
+                            "restaurant-pricerange"
+                        ],
+                        "slots_values_list": [
+                            [
+                                "centre"
+                            ],
+                            [
+                                "expensive"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "find_hotel",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                }
+            ],
+            "slots": [
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                }
+            ]
+        },
+        {
+            "service": [],
+            "state": [],
+            "slots": []
+        },
+        {
+            "service": [
+                "restaurant",
+                "taxi",
+                "train",
+                "bus",
+                "police",
+                "hotel",
+                "attraction",
+                "hospital"
+            ],
+            "state": [
+                {
+                    "active_intent": "find_restaurant",
+                    "requested_slots": [
+                        "restaurant-food"
+                    ],
+                    "slots_values": {
+                        "slots_values_name": [
+                            "restaurant-area",
+                            "restaurant-pricerange"
+                        ],
+                        "slots_values_list": [
+                            [
+                                "centre"
+                            ],
+                            [
+                                "expensive"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "find_hotel",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                }
+            ],
+            "slots": [
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                }
+            ]
+        },
+        {
+            "service": [
+                "restaurant"
+            ],
+            "state": [
+                {
+                    "active_intent": "",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                }
+            ],
+            "slots": [
+                {
+                    "slot": [
+                        "restaurant-name"
+                    ],
+                    "value": [
+                        "Bedouin"
+                    ],
+                    "start": [
+                        31
+                    ],
+                    "exclusive_end": [
+                        38
+                    ],
+                    "copy_from": [
+                        ""
+                    ],
+                    "copy_from_value": [
+                        []
+                    ]
+                }
+            ]
+        },
+        {
+            "service": [
+                "restaurant",
+                "hotel",
+                "taxi",
+                "train",
+                "bus",
+                "police",
+                "attraction",
+                "hospital"
+            ],
+            "state": [
+                {
+                    "active_intent": "find_restaurant",
+                    "requested_slots": [
+                        "restaurant-phone"
+                    ],
+                    "slots_values": {
+                        "slots_values_name": [
+                            "restaurant-area",
+                            "restaurant-name",
+                            "restaurant-pricerange"
+                        ],
+                        "slots_values_list": [
+                            [
+                                "centre"
+                            ],
+                            [
+                                "bedouin"
+                            ],
+                            [
+                                "expensive"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "active_intent": "find_hotel",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [
+                            "hotel-pricerange",
+                            "hotel-type"
+                        ],
+                        "slots_values_list": [
+                            [
+                                "expensive"
+                            ],
+                            [
+                                "hotel"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                }
+            ],
+            "slots": [
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                }
+            ]
+        },
+        {
+            "service": [
+                "hotel"
+            ],
+            "state": [
+                {
+                    "active_intent": "",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                }
+            ],
+            "slots": [
+                {
+                    "slot": [
+                        "hotel-name"
+                    ],
+                    "value": [
+                        "University Arms Hotel"
+                    ],
+                    "start": [
+                        69
+                    ],
+                    "exclusive_end": [
+                        90
+                    ],
+                    "copy_from": [
+                        ""
+                    ],
+                    "copy_from_value": [
+                        []
+                    ]
+                }
+            ]
+        },
+        {
+            "service": [
+                "restaurant",
+                "hotel",
+                "taxi",
+                "train",
+                "bus",
+                "police",
+                "attraction",
+                "hospital"
+            ],
+            "state": [
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [
+                            "restaurant-area",
+                            "restaurant-name",
+                            "restaurant-pricerange"
+                        ],
+                        "slots_values_list": [
+                            [
+                                "centre"
+                            ],
+                            [
+                                "bedouin"
+                            ],
+                            [
+                                "expensive"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "active_intent": "find_hotel",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [
+                            "hotel-name",
+                            "hotel-pricerange",
+                            "hotel-type"
+                        ],
+                        "slots_values_list": [
+                            [
+                                "university arms hotel"
+                            ],
+                            [
+                                "expensive"
+                            ],
+                            [
+                                "hotel"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                }
+            ],
+            "slots": [
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                }
+            ]
+        },
+        {
+            "service": [],
+            "state": [],
+            "slots": []
+        },
+        {
+            "service": [
+                "restaurant",
+                "hotel",
+                "taxi",
+                "train",
+                "bus",
+                "police",
+                "attraction",
+                "hospital"
+            ],
+            "state": [
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [
+                            "restaurant-area",
+                            "restaurant-name",
+                            "restaurant-pricerange"
+                        ],
+                        "slots_values_list": [
+                            [
+                                "centre"
+                            ],
+                            [
+                                "bedouin"
+                            ],
+                            [
+                                "expensive"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "active_intent": "book_hotel",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [
+                            "hotel-bookday",
+                            "hotel-bookpeople",
+                            "hotel-bookstay",
+                            "hotel-name",
+                            "hotel-pricerange",
+                            "hotel-type"
+                        ],
+                        "slots_values_list": [
+                            [
+                                "saturday"
+                            ],
+                            [
+                                "2"
+                            ],
+                            [
+                                "2"
+                            ],
+                            [
+                                "university arms hotel"
+                            ],
+                            [
+                                "expensive"
+                            ],
+                            [
+                                "hotel"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                }
+            ],
+            "slots": [
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                }
+            ]
+        },
+        {
+            "service": [],
+            "state": [],
+            "slots": []
+        },
+        {
+            "service": [
+                "restaurant",
+                "hotel",
+                "taxi",
+                "train",
+                "bus",
+                "police",
+                "attraction",
+                "hospital"
+            ],
+            "state": [
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [
+                            "restaurant-area",
+                            "restaurant-name",
+                            "restaurant-pricerange"
+                        ],
+                        "slots_values_list": [
+                            [
+                                "centre"
+                            ],
+                            [
+                                "bedouin"
+                            ],
+                            [
+                                "expensive"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [
+                            "hotel-bookday",
+                            "hotel-bookpeople",
+                            "hotel-bookstay",
+                            "hotel-name",
+                            "hotel-pricerange",
+                            "hotel-type"
+                        ],
+                        "slots_values_list": [
+                            [
+                                "saturday"
+                            ],
+                            [
+                                "2"
+                            ],
+                            [
+                                "2"
+                            ],
+                            [
+                                "university arms hotel"
+                            ],
+                            [
+                                "expensive"
+                            ],
+                            [
+                                "hotel"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                },
+                {
+                    "active_intent": "NONE",
+                    "requested_slots": [],
+                    "slots_values": {
+                        "slots_values_name": [],
+                        "slots_values_list": []
+                    }
+                }
+            ],
+            "slots": [
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                },
+                {
+                    "slot": [],
+                    "value": [],
+                    "start": [],
+                    "exclusive_end": [],
+                    "copy_from": [],
+                    "copy_from_value": []
+                }
+            ]
+        },
+        {
+            "service": [],
+            "state": [],
+            "slots": []
+        }
+    ],
+    "dialogue_acts": [
+        {
+            "dialog_act": {
+                "act_type": [
+                    "Restaurant-Inform"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "area",
+                            "pricerange"
+                        ],
+                        "slot_value": [
+                            "centre",
+                            "expensive"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [
+                    "Restaurant-Inform",
+                    "Restaurant-Inform"
+                ],
+                "act_slot_name": [
+                    "area",
+                    "pricerange"
+                ],
+                "act_slot_value": [
+                    "centre",
+                    "expensive"
+                ],
+                "span_start": [
+                    30,
+                    43
+                ],
+                "span_end": [
+                    36,
+                    52
+                ]
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "Restaurant-Inform",
+                    "Restaurant-Select"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "choice"
+                        ],
+                        "slot_value": [
+                            "several"
+                        ]
+                    },
+                    {
+                        "slot_name": [
+                            "food",
+                            "food",
+                            "food"
+                        ],
+                        "slot_value": [
+                            "African",
+                            "Asian",
+                            "British"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [
+                    "Restaurant-Inform",
+                    "Restaurant-Select",
+                    "Restaurant-Select",
+                    "Restaurant-Select"
+                ],
+                "act_slot_name": [
+                    "choice",
+                    "food",
+                    "food",
+                    "food"
+                ],
+                "act_slot_value": [
+                    "several",
+                    "African",
+                    "Asian",
+                    "British"
+                ],
+                "span_start": [
+                    7,
+                    46,
+                    55,
+                    65
+                ],
+                "span_end": [
+                    14,
+                    53,
+                    60,
+                    72
+                ]
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "Restaurant-Request"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "food"
+                        ],
+                        "slot_value": [
+                            "?"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [],
+                "act_slot_name": [],
+                "act_slot_value": [],
+                "span_start": [],
+                "span_end": []
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "Restaurant-Inform"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "area",
+                            "food",
+                            "name"
+                        ],
+                        "slot_value": [
+                            "centre",
+                            "Afrian",
+                            "Bedouin"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [
+                    "Restaurant-Inform",
+                    "Restaurant-Inform",
+                    "Restaurant-Inform"
+                ],
+                "act_slot_name": [
+                    "food",
+                    "name",
+                    "area"
+                ],
+                "act_slot_value": [
+                    "Afrian",
+                    "Bedouin",
+                    "centre"
+                ],
+                "span_start": [
+                    12,
+                    31,
+                    46
+                ],
+                "span_end": [
+                    18,
+                    38,
+                    52
+                ]
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "Hotel-Inform",
+                    "Restaurant-Request"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "pricerange",
+                            "type"
+                        ],
+                        "slot_value": [
+                            "expensive",
+                            "hotel"
+                        ]
+                    },
+                    {
+                        "slot_name": [
+                            "phone"
+                        ],
+                        "slot_value": [
+                            "?"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [
+                    "Hotel-Inform",
+                    "Hotel-Inform"
+                ],
+                "act_slot_name": [
+                    "pricerange",
+                    "type"
+                ],
+                "act_slot_value": [
+                    "expensive",
+                    "hotel"
+                ],
+                "span_start": [
+                    76,
+                    86
+                ],
+                "span_end": [
+                    85,
+                    91
+                ]
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "Hotel-Recommend",
+                    "Restaurant-Inform"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "area",
+                            "name"
+                        ],
+                        "slot_value": [
+                            "center of town",
+                            "the University Arms Hotel"
+                        ]
+                    },
+                    {
+                        "slot_name": [
+                            "name",
+                            "phone"
+                        ],
+                        "slot_value": [
+                            "Bedouin",
+                            "01223367660"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [
+                    "Restaurant-Inform",
+                    "Restaurant-Inform",
+                    "Hotel-Recommend",
+                    "Hotel-Recommend"
+                ],
+                "act_slot_name": [
+                    "name",
+                    "phone",
+                    "name",
+                    "area"
+                ],
+                "act_slot_value": [
+                    "Bedouin",
+                    "01223367660",
+                    "the University Arms Hotel",
+                    "center of town"
+                ],
+                "span_start": [
+                    0,
+                    19,
+                    65,
+                    98
+                ],
+                "span_end": [
+                    7,
+                    30,
+                    90,
+                    112
+                ]
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "Hotel-Inform"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "none"
+                        ],
+                        "slot_value": [
+                            "none"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [],
+                "act_slot_name": [],
+                "act_slot_value": [],
+                "span_start": [],
+                "span_end": []
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "Booking-Request"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "bookday"
+                        ],
+                        "slot_value": [
+                            "?"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [],
+                "act_slot_name": [],
+                "act_slot_value": [],
+                "span_start": [],
+                "span_end": []
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "Hotel-Inform"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "bookday",
+                            "bookpeople",
+                            "bookstay"
+                        ],
+                        "slot_value": [
+                            "saturday",
+                            "2",
+                            "2"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [
+                    "Hotel-Inform",
+                    "Hotel-Inform",
+                    "Hotel-Inform"
+                ],
+                "act_slot_name": [
+                    "bookstay",
+                    "bookpeople",
+                    "bookday"
+                ],
+                "act_slot_value": [
+                    "2",
+                    "2",
+                    "saturday"
+                ],
+                "span_start": [
+                    22,
+                    35,
+                    58
+                ],
+                "span_end": [
+                    23,
+                    36,
+                    66
+                ]
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "Booking-Book",
+                    "general-reqmore"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "ref"
+                        ],
+                        "slot_value": [
+                            "FRGZWQL2"
+                        ]
+                    },
+                    {
+                        "slot_name": [
+                            "none"
+                        ],
+                        "slot_value": [
+                            "none"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [
+                    "Booking-Book"
+                ],
+                "act_slot_name": [
+                    "ref"
+                ],
+                "act_slot_value": [
+                    "FRGZWQL2"
+                ],
+                "span_start": [
+                    54
+                ],
+                "span_end": [
+                    62
+                ]
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "general-bye"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "none"
+                        ],
+                        "slot_value": [
+                            "none"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [],
+                "act_slot_name": [],
+                "act_slot_value": [],
+                "span_start": [],
+                "span_end": []
+            }
+        },
+        {
+            "dialog_act": {
+                "act_type": [
+                    "general-bye",
+                    "general-welcome"
+                ],
+                "act_slots": [
+                    {
+                        "slot_name": [
+                            "none"
+                        ],
+                        "slot_value": [
+                            "none"
+                        ]
+                    },
+                    {
+                        "slot_name": [
+                            "none"
+                        ],
+                        "slot_value": [
+                            "none"
+                        ]
+                    }
+                ]
+            },
+            "span_info": {
+                "act_type": [],
+                "act_slot_name": [],
+                "act_slot_value": [],
+                "span_start": [],
+                "span_end": []
+            }
+        }
+    ]
+}

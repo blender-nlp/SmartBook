@@ -1,0 +1,6 @@
+openai
+backoff==1.11.1
+sentence-transformers
+transformers
+nltk==3.6.2
+numpy==1.19.5
