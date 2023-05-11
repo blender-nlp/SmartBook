@@ -1,5 +1,7 @@
 # SmartBook
 
+SmartBook is a novel task for generating situation reports: given large volumes of news data, produce a structured report with multiple hypotheses (claims) summarized and grounded (linked) to sources with factual evidence. These reports are structured as a sequence of timespans, each consisting of major events (as chapters), subdivided by strategic questions (as section headers) with their grounded summaries (as section content).
+
 <img src="SmartBook_architecture.png"  width="65%" height="65%">
 
 This repository contains the code and instructions to generate automated situation reports using our **SmartBook** framework.
