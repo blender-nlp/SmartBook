@@ -1,5 +1,7 @@
 # SmartBook
 
+<img src="SmartBook_architecture.png"  width="65%" height="65%">
+
 This repository contains the code and instructions to generate automated situation reports using our **SmartBook** framework.
 
 Below are the different steps in our SmartBook framework:
@@ -8,6 +10,8 @@ Below are the different steps in our SmartBook framework:
 3. Strategic question generation and de-duplication
 4. Question-driven claim extraction and validation
 5. Grounded summarization
+
+<img src="SmartBook_modules.png"  width="35%" height="35%">
 
 `input_dir`: The input is a folder with raw text files, with the name of the file being used as the file id.
 
