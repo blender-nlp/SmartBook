@@ -91,7 +91,11 @@ export OUTPUT_DIR_PATH=path to output_dir
 docker run  --rm --gpus all -v ${INPUT_DIR_PATH}:/var/spool/input/ -v ${OUTPUT_DIR_PATH}:/var/spool/output/ --env OPENAI_KEY=<openai_key_here> -t blendernlp/covid-claim-radar:revanth3_question_v1
 ```
 
+The above code takes as input the previously generated `output_headline.json` and generates the question output `output_questions.json` in `output_dir`.
+
 ## Claim Extraction and Validation
+
+The above code takes as input the previously generated `output_questions.json` and generates the claim output `output_claims.json` in `output_dir`.
 
 ## Grounded Summarization
 
@@ -111,4 +115,6 @@ export OUTPUT_DIR_PATH=path to output_dir
 ```
 docker run  --rm --gpus all -v ${INPUT_DIR_PATH}:/var/spool/input/ -v ${OUTPUT_DIR_PATH}:/var/spool/output/ --env OPENAI_KEY=<openai_key_here> -t blendernlp/covid-claim-radar:revanth3_summarization_v1
 ```
+
+The above code takes as input the previously generated `output_claims.json` and generates the summary output `output_summaries.json` in `output_dir`.
 
