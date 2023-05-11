@@ -3,11 +3,11 @@
 This repository contains the code and instructions to generate automated situation reports using our **SmartBook** framework.
 
 Below are the different steps in our SmartBook framework:
-- News article clustering
-- Headline generation for the clusters
-- Strategic question generation and de-duplication
-- Question-driven claim extraction and validation
-- Grounded summarization
+1. News article clustering
+2. Headline generation for the clusters
+3. Strategic question generation and de-duplication
+4. Question-driven claim extraction and validation
+5. Grounded summarization
 
 `input_dir`: The input is a folder with raw text files, with the name of the file being used as the file id.
 
