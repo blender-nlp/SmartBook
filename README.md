@@ -101,6 +101,30 @@ The above code takes as input the previously generated `output_headline.json` an
 
 ## Claim Extraction and Validation
 
+The claim extraction module is based on our previous work: [A Zero-Shot Claim Detection Framework Using Question Answering](https://aclanthology.org/2022.coling-1.603/)
+
+**Note:** The claim extraction and validation module requires a GPU to run.
+
+Below are the steps to run the claim extraction and verification code:
+- Pull the docker container: 
+```
+docker pull blendernlp/covid-claim-radar:revanth3_claim_extraction_v1
+```
+- Set the input and output dir paths:
+```
+export INPUT_DIR_PATH=path to output_dir
+export OUTPUT_DIR_PATH=path to output_dir
+```
+- The claim extraction code has two options: 
+    - *Running with the same corpus*: This option uses the cluster's articles as the corpurs to extract claims from
+    ```
+    docker run  --rm --gpus all -v ${INPUT_DIR_PATH}:/var/spool/input/ -v ${OUTPUT_DIR_PATH}:/var/spool/output/ -t blendernlp/covid-claim-radar:revanth3_claim_extraction_v1
+    ```
+    - *Running with an expanded corpus*: Additionally, the code provides an option to get an expanded set of news articles by search google news with the cluster headline as the query. <br><br> **Note:** You need to subscribe to [SerpAPI](https://serpapi.com/) to be able to search Google News. Additionally you'll need to provide `start_date` and `end_date` parameters (in *yyyy-mm-dd* string format) to define which timeperiod you want these expanded news articles from. 
+    ```
+    docker run  --rm --gpus all -v ${INPUT_DIR_PATH}:/var/spool/input/ -v ${OUTPUT_DIR_PATH}:/var/spool/output/ --env SERPAPI_KEY=<serpapi_key_here> --env START_DATE=<start_date_here> --env END_DATE=<end_date_here> -t blendernlp/covid-claim-radar:revanth3_claim_extraction_v1
+    ```
+
 The above code takes as input the previously generated `output_questions.json` and generates the claim output `output_claims.json` in `output_dir`.
 
 ## Grounded Summarization
@@ -123,4 +147,26 @@ docker run  --rm --gpus all -v ${INPUT_DIR_PATH}:/var/spool/input/ -v ${OUTPUT_D
 ```
 
 The above code takes as input the previously generated `output_claims.json` and generates the summary output `output_summaries.json` in `output_dir`.
+
+
+If you found this repo useful for your work, please consider citing our papers:
+
+```
+@article{reddy2023smartbook,
+  title={SmartBook: AI-Assisted Situation Report Generation},
+  author={Reddy, Revanth Gangi and Fung, Yi R and Zeng, Qi and Li, Manling and Wang, Ziqi and Sullivan, Paul and others},
+  journal={arXiv preprint arXiv:2303.14337},
+  year={2023}
+}
+```
+
+```
+@inproceedings{reddy2022zero,
+  title={A Zero-Shot Claim Detection Framework using Question Answering},
+  author={Reddy, Revanth Gangi and Chinthakindi, Sai Chetan and Fung, Yi R and Small, Kevin and Ji, Heng},
+  booktitle={Proceedings of the 29th International Conference on Computational Linguistics},
+  pages={6927--6933},
+  year={2022}
+}
+```
 
