@@ -11,4 +11,6 @@ You can run the code to scrape all of CNN's daily coverage within a given time p
 python cnn_ukraine_crawler_json.py --start_date <start_date_here> --end_date <end_date_here> --output_dir <output_dir_here>
 ```
 
+**Note:** For optimal clustering performance, we recommend not using time periods that are more than than 2 weeks apart. For instance, if you want to generate situation reports for a one month period, we recommend running SmartBook separately for two 2-week durations. 
+
 The above code creates raw text files in the `output_dir` with each article having it's own file and file name corresponding to the article ID. The `output_dir` used here should be used as the `input_dir` when running the SmartBook code.
