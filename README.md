@@ -15,6 +15,14 @@ Below are the different steps in our SmartBook framework:
 
 <img src="SmartBook_modules.png"  width="35%" height="35%">
 
+<br>
+
+## Getting the news data
+
+SmartBook can be used to generate analysis reports for any news scenario. You just need to provide the input news articles to be used for generating SmartBook.
+
+To create SmartBook reports for the *Ukraine-Russia* war scenario, you can first scrape the articles by following the instructions [here](examples/Ukraine-Russia/README.md) before running the code below. 
+
 `input_dir`: The input is a folder with raw text files, with the name of the file being used as the file id.
 
 `output_dir`: The output directory will contain the outputs of the clustering and headline generator steps.
