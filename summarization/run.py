@@ -4,9 +4,42 @@ from copy import deepcopy
 import argparse
 import json
 import os
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from openai.error import RateLimitError
+import backoff
 
-def run_summarization(data, api_key):
-    openai.api_key = api_key
+@backoff.on_exception(backoff.expo, RateLimitError)
+def get_summary_from_openai(prompt):
+    chatgpt_output = openai.ChatCompletion.create(
+                model="gpt-4",
+                messages = [
+                    {"role": "system", "content": ""},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.7,
+                max_tokens=256,
+                top_p=1,
+                frequency_penalty=0,
+                presence_penalty=0
+            )
+    summary = chatgpt_output["choices"][0]["message"]["content"].strip()
+    return summary
+
+def get_summary_from_llama(model, tokenizer, prompt):
+    input_ids = tokenizer(prompt, return_tensors="pt", truncation=True).input_ids.cuda()
+    outputs = model.generate(input_ids=input_ids, max_new_tokens=256, do_sample=True, top_p=1,temperature=0.7)
+    summary = tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True)[0][len(prompt):]
+    return summary
+
+def run_summarization(data, args):
+    if args.openai_api_key != None:
+        print("Using GPT-4")
+        openai.api_key = args.openai_api_key
+    else:
+        print("Using Llama-2")
+        tokenizer = AutoTokenizer.from_pretrained(args.generation_model_path)
+        model = AutoModelForCausalLM.from_pretrained(args.generation_model_path)
+        model.to(device='cuda')
     for cluster_index in tqdm(data):
         cluster = data[cluster_index]
         print("Event: ", cluster["cluster_headline"])
@@ -21,18 +54,15 @@ def run_summarization(data, api_key):
             inp_text = "You are given a set of contexts below:\n\n"
             inp_text = "\n".join([str(index+1) + ") " + i["context"] for index, i in enumerate(data[cluster_index]["questions"][question]["claims"])])
             inp_text = inp_text + "\n\nUsing the information above, write a coherent summary for " + question + "\n"
-            inp_text = inp_text + "You should cite the appropriate contexts where necessary. Each sentence in the summary should have a citation and the citations should be in the form of just the context number.\n\n"
-            response = openai.Completion.create(
-                engine="text-davinci-003",
-                prompt=inp_text,
-                temperature=0.7,
-                max_tokens=250,
-                top_p=1,
-                frequency_penalty=0,
-                presence_penalty=0
-            )
-            data[cluster_index]["questions"][question]["summary"] = response["choices"][0]["text"].strip()
-        
+            inp_text = inp_text + "You should cite the appropriate contexts where necessary. Always cite for any factual claim. When citing several contexts, use [1][2][3]. Cite at least one context in each sentence..\n\n"
+
+            if args.openai_api_key != None:
+                summary = get_summary_from_openai(inp_text)
+            else:
+                summary = get_summary_from_llama(model, tokenizer, inp_text)
+            
+            data[cluster_index]["questions"][question]["summary"] = summary
+
         urls_mapping = {item["id"]:item["link"] for item in cluster["all_articles"]}
         for question in cluster["questions"]:
             for claim_index, claim_item in enumerate(cluster["questions"][question]["claims"]):
@@ -47,8 +77,10 @@ if __name__ == "__main__":
     parser.add_argument("--openai_api_key", type=str, help="Open AI Key")
     parser.add_argument("--output_dir", type=str, help="path to output directory")
     parser.add_argument("--input_dir", type=str, help="path to input directory")
+    parser.add_argument("--generation_model_path", type=str, help="Path to question generation model")
 
     args = parser.parse_args()
+    assert args.openai_api_key != None or args.generation_model_path != None
 
     claim_data = json.load(open(os.path.join(args.input_dir, "output_claims.json")))
     summaries = run_summarization(claim_data, args.openai_api_key)
